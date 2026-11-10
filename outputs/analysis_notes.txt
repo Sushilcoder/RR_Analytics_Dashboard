@@ -1,0 +1,11 @@
+SupeRR Selector Season 2 – provisional leaderboard notes
+Scope: IPL seasons 2022–2026 plus T20I competitions in supplied competitions.csv.
+Matches with delivery data analysed: 837
+Regulation-innings delivery rows: 193988
+Pressure-labelled delivery rows: 48726 (25.12%)
+Pressure proxy: final 5 scheduled overs OR <=4 wickets remaining after >=6 legal overs.
+Eligibility: >=60 pressure balls, >=200 total balls, >=5 matches containing pressure balls.
+Batting score: 35% pressure SR percentile + 20% boundary-rate percentile + 15% inverse dot-ball-rate percentile + 15% inverse dismissal-rate percentile + 15% pressure-vs-normal SR uplift percentile.
+Bowling score: 40% inverse pressure-economy-proxy percentile + 30% bowler-credit wicket-rate percentile + 15% inverse boundary-conceded-rate percentile + 15% normal-vs-pressure economy improvement percentile.
+Format normalization: percentiles within T20 vs T20I, then player format scores combined using sqrt(pressure-ball exposure) weights.
+Warning: this is exploratory only, not final. Runs/extras definitions, actual required run rate and match closeness remain unverified. Bowling economy proxy = runs field + 1 for wide/no-ball; organiser confirmation and scorecard validation required.
